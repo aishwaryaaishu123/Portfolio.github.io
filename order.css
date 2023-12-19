@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+}
+
+.logo img {
+    width: 100px;
+    height: 50px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search i {
+    margin-right: 5px;
+}
+
+nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    font-size: 14px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.illustration-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+.illustration {
+    text-align: center;
+}
+
+.filters-section {
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.cuisines-section, .top-brands {
+    padding: 20px;
+}
+
+.cuisines-section h1, .top-brands h1 {
+    color: #e74c3c;
+}
+
+.cuisine {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.cuisine img {
+    width: 150px;
+    height: 90px;
+}
+
+.cuisine p {
+    background-color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .logo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo img {
+        margin-bottom: 10px;
+    }
+
+    .search {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        font-size: 12px;
+    }
+
+    .illustration-section, .filters-section, .cuisines-section, .top-brands {
+        padding: 10px;
+    }
+
+    .cuisine img {
+        width: 100%;
+        height: auto;
+    }
+}
